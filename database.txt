@@ -1,0 +1,16 @@
+CREATE TABLE taxi (
+				booking_no INT(4) PRIMARY KEY AUTO_INCREMENT, 
+				name VARCHAR(20),
+				phone VARCHAR(12),
+				pickupSuburb VARCHAR(10),
+				pickupstreetName VARCHAR(100),
+				pickupStreetNumber VARCHAR(5),
+				pickupUnitNumber VARCHAR(5),
+				pickupDate DATE,
+				pickupTime TIME,
+				dropoffSuburb VARCHAR(10),
+				dropoffStreetName VARCHAR(100),
+				dropoffStreetNumber VARCHAR(5),
+				status VARCHAR(100),
+				bookingDate DATE,
+				bookingTime TIME);

@@ -1,0 +1,51 @@
+<HTML XMLns="http://www.w3.org/1999/xHTML">
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+    <script type="text/javascript" src="xhrRequest.js"></script>
+    <script type="text/javascript" src="booking.js"></script>
+<head>
+    <title>CabsOnline</title>
+</head>
+<body>
+    <div class="contain"></div>
+    <h1>Booking System</h1>
+<table><form>
+    <h2>Customer details</h2>
+    <label>Name: <input type="text" name = "namefield"/></label>
+    <label>PhoneNumber: <input type="text" name = "phone"/></label>
+    <br/>
+    <h2>Pick-up Address</h2>
+    <label>Suburb: <input type="text" name="pickupSuburb"/></label>
+    <label>Street Name: <input type="text" name="pickupStreetName"/></label>
+    <label>Street Number: <input type="text" name="pickupStreetNumber"/></label>
+    <label>Unit Number: <input type="text" name="pickupUnitNumber"/></label>
+    <br/>
+    <h2>Pick-up Date and Time</h2>
+    <label>Date: <input type="date" name="pickupDate"/></label>
+    <label>Time: <input type="time" name="pickupTime"/></label>
+    <br/>
+    <h2>Destination Details</h2>
+    <label>Suburb: <input type="text" name="dropoffSuburb"/></label>
+    <label>Street Name: <input type="text" name="dropoffStreetName"/></label>
+    <label>Street Number: <input type="text" name="dropoffStreetNumber"/></label>
+    <input type = "button" onClick = "getData('processRequest.php','targetDiv', 
+	namefield.value, 
+	phone.value, 
+	pickupSuburb.value, 
+	pickupStreetName.value,
+	pickupStreetNumber.value,
+	pickupUnitNumber.value,
+	pickupDate.value,
+    pickupTime.value,
+	dropoffSuburb.value,
+	dropoffStreetName.value,
+	dropoffStreetNumber.value
+	) " value="Booking">
+
+
+</form></table>
+<div id="targetDiv"></div>
+</body>
+</html>

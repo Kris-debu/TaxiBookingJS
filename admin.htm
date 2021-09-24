@@ -1,0 +1,26 @@
+<HTML xmlns="http://www.w3.org/1999/xHTML">
+<html>
+    <meta http-equiv="Content-Type" content = "text/html; charset=utf-8"/>
+    <html xmlns="http://www.w3.org/1999/xHTML">
+    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+    <script type="text/javascript" src="xhrRequest.js"></script>
+    <script type="text/javascript" src="admin.js"></script>
+
+<head><title>Admin Cabs Online</title></head>
+
+<body>
+    <div class="contain"></div>
+    <h1>Administrator access</h1>
+    <form>
+        <input type="button" onclick="getPickup('getRequest.php', 'targetDiv')" value="Check pick-up requests">
+    </form>
+    <table id = "table" border="1"></table>
+    <div id="targetDiv"></div>
+<form>
+    <label><input type="text" name="textInput" placeholder="Reference No."></label>
+    <input type="button" onclick="checkTaxi('checkTaxi.php', 'targetDiv2', textInput.value)" value="Check Taxi">
+</form>
+<div id="targetDiv2"></div>
+    
+</body>
+</html>
